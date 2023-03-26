@@ -11,7 +11,7 @@ const Navbar = () => {
         {navLinks.map((items, index) => {
           return <li
             key={items.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : " mr-10"} text-white`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : " mr-10"} text-white hover:text-[#33bbcf]`}
           >
             <a href={`#${items.id}`}>
               {items.title}
@@ -33,7 +33,7 @@ const Navbar = () => {
         {navLinks.map((items, index) => {
           return <li
             key={items.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : " mb-4"} text-white`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : " mb-4"} text-white `}
           >
             <a href={`#${items.id}`}>
               {items.title}
